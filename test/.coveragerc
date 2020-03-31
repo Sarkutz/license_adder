@@ -1,0 +1,32 @@
+[run]
+# cmdline: --branch
+branch = true
+
+# cmdline: --include=shell_glob_pattern
+include =
+	license_adder/*.py
+	src/*.py
+
+# cmdline: --omit=shell_glob_pattern
+omit =
+	*/logs/*
+	test/*
+	
+# cmdline: --context=static_context_name
+context = run1
+
+# cmdline: not supported
+dynamic_context = test_function
+
+
+[paths]
+# cmdline: --source=license_adder,src
+source =
+	license_adder/
+	src/
+
+
+[report]
+# cmdline: --fail-under=40
+fail_under = 40
+
